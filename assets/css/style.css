@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body {
+    font-family: 'Gluten', 'Rubik' sans-serif;
+    background-color: #07243F; 
+    color: #FFF; }
+    /*margine and padding!!!!!*/
+
+h1 {
+    font-size: 59px;
+    font-weight: bold;
+    color: #FFF5CD; 
+    font-family: 'Gluten';
+    font-weight: bolder; /*how to make it bolder*/ 
+    font-stretch: expanded;
+    letter-spacing: 0.2rem;}
+
+h3 {
+    font-size: 26px;
+    font-weight:600;
+    color: #FFF; 
+    font-family: 'Rubik'}
+
+p {
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #FFF;
+    font-family: 'Rubik'}
+
+.button{
+    font-family: 'Gluten';
+    font-weight:600;
+    text-transform: uppercase;
+    font-stretch:expanded;
+    background-color: #FF7433;
+    color: #07243F;}
+
+/* Header start */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1.5rem 2rem;}
+
+header a {
+    text-decoration: none;}
+
+#logo {
+    display: flex;
+    font-family: 'Gluten';
+    font-size: 48px;
+    font-weight: 850;
+    cursor: pointer;
+    padding-top: 0.5rem;
+    padding-left: 0.7rem;}
+
+#logo a{ 
+    color: #FF8034; }
+
+.menu a {
+    text-decoration:none; /*inherit???*/
+    font-size: 18px;
+    font-family: Rubik;
+    color: #FFF;} 
+
+.menu a:hover {
+    color: #FF8034;}   
+
+.menu ul {
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;}
+
+.menu li {
+    list-style: none;}
+
+/* Hero Mani */
+
+.container-hero {display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1536px;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 0rem;}
+
+.hero-text {
+    margin-right: 7rem;
+    padding: 0.3rem;}
+
+.hero-text h1 {
+    font-size: 69px;}
+
+#btn {
+    border: none;
+    padding: 1rem 3.75rem;
+    font-size: 1rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    border-radius: 5px;}
+
+.hero-video  {
+    width: 924px;
+    height: 928px;
+    border-radius: 10px;}
+
+/* Vision */
+
+#vision {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 3rem 3rem;}
+#vision2 {
+    margin: 3rem 4rem; }
+
+/*Responsive????*/
+
+@media (max-width: 1536px) {}
+
+
+@media (max-width: 1280px) {}
+
+
+@media (max-width: 1024px) {}
+
+
+@media (max-width: 768px) {}
+
+
+@media (max-width: 640px) {}
+
+
+@media (max-width: 475px) {}
+
+
+/* Footer */
+
+.footer {
+    width: 100%; 
+    padding: 2rem 2rem;
+    background-color: #07243F; 
+    color: #FFF; 
+    font-size: 12px;
+    z-index: 1000;}
+    /*position:fixed why is disappearing?*/
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+}
+
+#footer-left {
+    flex: 1; /* Take up space on the left side */
+    text-align: left;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px; /* Add space between icons */
+    justify-content: center;
+}
+
+.footer-icons img {
+    width: 2rem;
+    height: 2rem;
+}
+
+#footer-right {
+    flex: 1; /* Take up space on the right side */
+    text-align: right;
+}
+
+#footer-right img {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/* About page */ 
+.about-loni {
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+    color: #FFF;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.about-loni h1 {
+    padding: 40px;
+    display: block;
+}
+
+/* Form email !!!!! not responsive do not know how to do it*/
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.email-form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #F7F3BF;
+    border-radius: 5px;
+    width: 400px;
+    background-color: #F7F3BF;
+    color: #112b54;
+}
+
+.email-form .button {
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;    
+}
+
+.survey-note {
+    font-size: 12px;
+    color: #FFF;
+    padding-bottom: 2rem;
+    padding-left: 6rem;
+}
+
+.survey-note a 
+{color: #FF7433;
+    text-decoration: underline;}
+    
