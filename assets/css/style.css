@@ -9,15 +9,16 @@
 body {
     font-family: 'Gluten', 'Rubik' sans-serif;
     background-color: #07243F; 
-    color: #FFF; }
-    /*margine and padding!!!!!*/
+    color: #FFF;
+    overflow-x: hidden; }
+    
 
 h1 {
     font-size: 59px;
     font-weight: bold;
     color: #FFF5CD; 
     font-family: 'Gluten';
-    font-weight: bolder; /*how to make it bolder*/ 
+    font-weight: bolder; 
     font-stretch: expanded;
     letter-spacing: 0.2rem;}
 
@@ -42,7 +43,7 @@ p {
     background-color: #FF7433;
     color: #07243F;}
 
-/* Header start */
+/* Header */
 
 header {
     display: flex;
