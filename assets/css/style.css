@@ -55,17 +55,15 @@ header {
 header a {
     text-decoration: none;}
 
-#logo {
-    display: flex;
+#logo a {
     font-family: 'Gluten';
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 850;
     cursor: pointer;
     padding-top: 0.5rem;
-    padding-left: 0.7rem;}
-
-#logo a{ 
+    padding-left: 0.7rem;
     color: #FF8034; }
+    
 
 .menu a {
     text-decoration:none; /*inherit???*/
