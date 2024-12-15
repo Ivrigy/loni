@@ -225,6 +225,61 @@ header a {
   transform: scale(1.1);
 }
 
+/*---------Blog---------*/
+
+#blog h1{
+  margin:2.5rem 2.5rem;
+  text-align: center;
+  padding-left: 1rem;
+  }
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.card {
+  width: 300px;
+  height: 450px;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px #07243f;
+  margin: 40px 20px;
+  transition: .10s;
+}
+.card img {
+width: 100%;
+height: 40%; 
+object-fit:cover;
+}
+.card-content {
+  padding: 20px 16px;
+}
+
+.card-content p {
+  color:#07243F;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.card-button {
+font-family: 'Rubik';
+font-weight: 500;
+text-transform: uppercase;
+font-size: 10px;
+
+display: inline-block;
+padding: 8px 16px;
+border-radius: 4px;
+margin-top: 20px;
+background-color: #ff8a33;
+color: #07243F;
+text-decoration: none;
+align-content: end;
+}
+
+
 /* ---------About page----------------- */
 .about-loni {
   text-align: center;
