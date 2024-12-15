@@ -1,247 +1,404 @@
-@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Gluten', 'Rubik' sans-serif;
-    background-color: #07243F; 
-    color: #FFF;
-    overflow-x: hidden; }
-    
+  font-family: "Gluten", "Rubik" sans-serif;
+  background-color: #07243f;
+  color: #fff;
+  overflow-x: hidden;
+}
 
 h1 {
-    font-size: 59px;
-    font-weight: bold;
-    color: #FFF5CD; 
-    font-family: 'Gluten';
-    font-weight: bolder; 
-    font-stretch: expanded;
-    letter-spacing: 0.2rem;}
+  font-size: 59px;
+  font-weight: bold;
+  color: #fff5cd;
+  font-family: "Gluten";
+  letter-spacing: 0.2rem;
+}
 
 h3 {
-    font-size: 26px;
-    font-weight:600;
-    color: #FFF; 
-    font-family: 'Rubik'}
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Rubik";
+}
 
 p {
-    font-size: 39px;
-    font-weight: 300;
-    line-height: 1.3;
-    color: #FFF;
-    font-family: 'Rubik'}
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.3;
+  color: #fff;
+  font-family: "Rubik";
+}
 
-.button{
-    font-family: 'Gluten';
-    font-weight:600;
-    text-transform: uppercase;
-    font-stretch:expanded;
-    background-color: #FF7433;
-    color: #07243F;}
+a {
+  color: #07243f;
+  cursor: pointer;
+  text-decoration: none;
+}
 
-/* Header */
+.button {
+  font-family: "Rubik";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-stretch: ultra-expanded;
+  background-color: #ff8a33;
+  color: #07243f;
+}
+
+/* ------------Header--------------- */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding: 1.5rem 2rem;}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem 2rem;
+}
 
 header a {
-    text-decoration: none;}
+  text-decoration: none;
+}
 
 #logo a {
-    font-family: 'Gluten';
-    font-size: 3rem;
-    font-weight: 850;
-    cursor: pointer;
-    padding-top: 0.5rem;
-    padding-left: 0.7rem;
-    color: #FF8034; }
-    
+  font-family: "Gluten";
+  font-size: 2.8rem;
+  font-weight: 850;
+  cursor: pointer;
+  color: #ff8034;
+}
 
-.menu a {
-    text-decoration:none; /*inherit???*/
-    font-size: 18px;
-    font-family: Rubik;
-    color: #FFF;} 
+/* -----Hamburger Menu adapted from github.com/hosseinnabi-ir -----*/
 
-.menu a:hover {
-    color: #FF8034;}   
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: auto;
+  right: 1.2rem;
+  padding-right: 1rem;
+  z-index: 10;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #ff8034;
+}
 
 .menu ul {
-    display:flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;}
+  font-family: "Rubik";
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+}
 
-.menu li {
-    list-style: none;}
+.menu ul li a {
+  color: white;
+  font-size: 1rem;
+}
+.menu ul li a:hover {
+  color: #ff8034;
+}
 
-/* Hero Mani */
+/* -----------Hero Section---------------- */
 
-.container-hero {display: flex;
+.container-hero {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-between;
-  max-width: 1536px;
-  margin-left: 1rem;
-  margin-top: 1.5rem;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 0rem;}
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
 
 .hero-text {
-    margin-right: 7rem;
-    padding: 0.3rem;}
+  position: relative;
+  z-index: 2;
+  padding-left: 3.2rem;
+  padding-bottom: 1rem;
+  padding-top: 5.5rem;
+  max-width: 600px;
+}
 
 .hero-text h1 {
-    font-size: 69px;}
+  font-size: 4.2rem;
+  font-weight: 750;
+  font-stretch: narrower;
+  color: #07243f;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h3 {
+  font-size: 1.6rem;
+  padding-left: 0.3rem;
+  margin-bottom: 20px;
+  color: #ffff65;
+}
 
 #btn {
-    border: none;
-    padding: 1rem 3.75rem;
-    font-size: 1rem;
-    margin-top: 5rem;
-    cursor: pointer;
-    border-radius: 5px;}
+  border: none;
+  width: 12.5rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-stretch: ultra-expanded;
+  margin-top: 5rem;
+  border-radius: 5px;
+}
 
-.hero-video  {
-    width: 924px;
-    height: 928px;
-    border-radius: 10px;}
+.hero-video video {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 10%;
+  opacity: 80%;
+  z-index: 1;
+}
 
-/* Vision */
-
+/* ---------Vision------------- */
 #vision {
-    text-align: center;
-    padding: 40px 20px;
-    margin: 3rem 3rem;}
-#vision2 {
-    margin: 3rem 4rem; }
+  text-align: center;
+  line-height: 1.5;
+  padding: 2rem 3.5rem;
+  margin: 2rem auto;
+}
 
-/*Responsive????*/
-
-@media (max-width: 1536px) {}
-
-
-@media (max-width: 1280px) {}
-
-
-@media (max-width: 1024px) {}
-
-
-@media (max-width: 768px) {}
-
-
-@media (max-width: 640px) {}
-
-
-@media (max-width: 475px) {}
-
-
-/* Footer */
-
+/* ----------Footer------------- */
 .footer {
-    width: 100%; 
-    padding: 2rem 2rem;
-    background-color: #07243F; 
-    color: #FFF; 
-    font-size: 12px;
-    z-index: 1000;}
-    /*position:fixed why is disappearing?*/
+  color: white;
+  padding: 2rem;
+}
 
 .footer-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
 }
 
 #footer-left {
-    flex: 1; /* Take up space on the left side */
-    text-align: left;
+  font-family: "Rubik";
+  font-size: 0.8rem;
 }
 
 .footer-icons {
-    display: flex;
-    gap: 10px; /* Add space between icons */
-    justify-content: center;
+  display: flex;
+  gap: 1rem;
 }
 
 .footer-icons img {
-    width: 2rem;
-    height: 2rem;
+  width: 28px;
+  height: 28px;
 }
 
-#footer-right {
-    flex: 1; /* Take up space on the right side */
-    text-align: right;
+.footer-icons img:hover {
+  transform: scale(1.1);
 }
 
 #footer-right img {
-    width: 3rem;
-    height: 3rem;
+  width: 40px;
+  height: auto;
 }
 
+#footer-right img:hover {
+  transform: scale(1.1);
+}
 
-/* About page */ 
+/* ---------About page----------------- */
 .about-loni {
-    text-align: center;
-    padding: 3.5rem 1.5rem;
-    color: #FFF;
-    max-width: 900px;
-    margin: 0 auto;
+  text-align: center;
+  padding: 3.5rem 1.5rem;
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .about-loni h1 {
-    padding: 40px;
-    display: block;
+  padding: 40px;
+  display: block;
 }
 
 /* Form email !!!!! not responsive do not know how to do it*/
 .email-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .email-form input {
-    padding: 0.8rem;
-    font-size: 1rem;
-    border: 1px solid #F7F3BF;
-    border-radius: 5px;
-    width: 400px;
-    background-color: #F7F3BF;
-    color: #112b54;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #f7f3bf;
+  border-radius: 5px;
+  width: 400px;
+  background-color: #f7f3bf;
+  color: #112b54;
 }
 
 .email-form .button {
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;    
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .survey-note {
-    font-size: 12px;
-    color: #FFF;
-    padding-bottom: 2rem;
-    padding-left: 6rem;
+  font-size: 12px;
+  color: #fff;
+  padding-bottom: 2rem;
+  padding-left: 6rem;
 }
 
-.survey-note a 
-{color: #FF7433;
-    text-decoration: underline;}
-    
+.survey-note a {
+  color: #ff7433;
+  text-decoration: underline;
+}
+
+/*--------RESPONSIVE----------------*/
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 1rem;
+  }
+  #logo a {
+    font-size: 1.5rem !important;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    background-color: #07243f;
+    position: absolute;
+    top: 3.5em;
+    right: 1rem;
+    width: 200px;
+    padding: 1rem;
+    z-index: 9;
+  }
+
+  #menu-toggle:checked ~ .menu ul {
+    display: flex;
+  }
+
+  /*--HERO --*/
+  .container-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+  }
+
+  .hero-video video {
+    position: absolute;
+    object-fit: cover !important;
+    height: 50vh !important;
+    object-position: 60% 10%;
+    opacity: 80%;
+    z-index: 1;
+  }
+  .hero-text {
+    margin-top: auto;
+    margin-right: -2.5rem !important;
+    padding-left: 4rem !important;
+    padding-top: 0rem;
+    padding-bottom: 0;
+    text-align: right;
+  }
+  .hero-text h1 {
+    font-size: 2.5rem;
+    color: #fff5cd;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  .hero-text h3 {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  #btn {
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    margin-top: auto;
+  }
+
+  /* Vision */
+  #vision {
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    line-height: 1.6;
+    margin: 0.7rem 0.5rem;
+  }
+  #vision p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+  #logo {
+    padding-top: 0.5rem;
+  }
+  #logo a {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  .container-hero {
+    height: 80vh;
+  }
+
+  .hero-video video {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    object-position: 50% 10%;
+    opacity: 80%;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container-hero {
+    height: 80vh;
+  }
+
+  .hero-video video {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    object-position: 40% 10%;
+    opacity: 80%;
+    z-index: 1;
+  }
+}
