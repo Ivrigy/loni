@@ -15,13 +15,17 @@ body {
 }
 
 h1 {
-  font-size: 59px;
+  font-size: 3.5rem;
   font-weight: bold;
   color: #fff5cd;
   font-family: "Gluten";
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
 }
-
+h2 {
+  font-family: "Rubik";
+  font-size: 1.5rem;
+  color: #fff;
+}
 h3 {
   font-size: 26px;
   font-weight: 600;
@@ -168,7 +172,7 @@ header a {
   height: 100%;
   object-fit: cover;
   object-position: 100% 10%;
-  opacity: 80%;
+  opacity: 96%;
   z-index: 1;
 }
 
@@ -180,10 +184,173 @@ header a {
   margin: 2rem auto;
 }
 
+
+/*---------Blog---------*/
+
+#blog h1{
+  margin: 1.5rem 2.5rem;
+  text-align: center;
+  padding-left: 1rem;
+  }
+  #blog p{
+text-align: center;
+  }
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.card {
+  width: 300px;
+  height: 450px;
+  background-color: #fff5cd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px #07243f;
+  margin: 40px 20px;
+  transition: .10s;
+}
+.card img {
+width: 100%;
+height: 40%; 
+object-fit:cover;
+}
+.card-content {
+  padding: 20px 16px;
+}
+
+.card-content p {
+  color:#07243F;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.card-button {
+font-family: 'Rubik';
+font-weight: 500;
+text-transform: uppercase;
+font-size: 10px;
+display: inline-block;
+padding: 8px 16px;
+border-radius: 4px;
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: #ff8a33;
+color: #07243F;
+text-decoration: none;
+align-content: end;
+}
+
+/*-----------Get Help-----------*/
+
+.emergency h1{
+  margin: 2rem 2.5rem;
+  text-align: center;
+  padding-left: 1rem;
+  font-size: 3.5rem;
+}
+.emergency img{
+  width: 100%;
+  height: 13.5rem; 
+  object-fit:cover;
+  object-position:center
+}
+.emergency p{
+  margin: 2.5rem 4rem; 
+  text-align: center;
+  padding-left: 1rem;
+}
+label{
+  font-family: "Rubik";
+  margin-left: 9rem;
+ 
+}
+select{
+  margin-left: 9rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem; 
+  color: #07243F;
+  background-color: #ff7433;
+}
+
+.container-cards{
+margin-top: 1rem;
+
+}
+#card-content p {
+  font-size: 1.3rem; 
+}
+
+#helpcard {
+  width: 250px;
+  height: 400px;
+  background-color: #07243f; 
+  margin: 30px 30px;
+}
+
+
+/* ---------About page----------------- */
+.about-loni {
+  text-align: center;
+  padding: 3.5rem 1.5rem;
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about-loni h1 {
+  padding-bottom: 1.5rem;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.email-form input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px #f7f3bf;
+  border-radius: 4px;
+  width: 400px;
+  background-color: #f7f3bf;
+  color: #112b54;
+}
+
+.email-form .button {
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.survey-note {
+  font-size: 12px;
+  color: #fff;
+  padding-bottom: 2rem;
+  align-self: center;
+}
+
+.survey-note a {
+  color: #ff7433;
+  text-decoration: underline;
+}
+
+#thanks img{
+  height: 90vh;
+  width: 100%;
+}
 /* ----------Footer------------- */
 .footer {
   color: white;
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 
 .footer-container {
@@ -224,114 +391,6 @@ header a {
   transform: scale(1.1);
 }
 
-/*---------Blog---------*/
-
-#blog h1{
-  margin:2.5rem 2.5rem;
-  text-align: center;
-  padding-left: 1rem;
-  }
-
-.container-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 3rem;
-}
-.card {
-  width: 300px;
-  height: 450px;
-  background-color: white;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0px 2px 4px #07243f;
-  margin: 40px 20px;
-  transition: .10s;
-}
-.card img {
-width: 100%;
-height: 40%; 
-object-fit:cover;
-}
-.card-content {
-  padding: 20px 16px;
-}
-
-.card-content p {
-  color:#07243F;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-.card-button {
-font-family: 'Rubik';
-font-weight: 500;
-text-transform: uppercase;
-font-size: 10px;
-
-display: inline-block;
-padding: 8px 16px;
-border-radius: 4px;
-margin-top: 20px;
-background-color: #ff8a33;
-color: #07243F;
-text-decoration: none;
-align-content: end;
-}
-
-
-/* ---------About page----------------- */
-.about-loni {
-  text-align: center;
-  padding: 3.5rem 1.5rem;
-  color: #fff;
-  max-width: 900px;
-  margin: 0 auto;
-}
-.about-loni h1 {
-  padding: 40px;
-  display: block;
-}
-
-/* Form email !!!!! not responsive do not know how to do it*/
-.email-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.email-form input {
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: 1px solid #f7f3bf;
-  border-radius: 5px;
-  width: 400px;
-  background-color: #f7f3bf;
-  color: #112b54;
-}
-
-.email-form .button {
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.survey-note {
-  font-size: 12px;
-  color: #fff;
-  padding-bottom: 2rem;
-  padding-left: 6rem;
-}
-
-.survey-note a {
-  color: #ff7433;
-  text-decoration: underline;
-}
-
 /*--------RESPONSIVE----------------*/
 
 @media screen and (max-width: 480px) {
@@ -344,8 +403,9 @@ align-content: end;
 
   .hamburger {
     display: flex;
+    z-index: 1000;
   }
-
+  
   .menu ul {
     display: none;
     flex-direction: column;
@@ -355,11 +415,11 @@ align-content: end;
     right: 1rem;
     width: 200px;
     padding: 1rem;
-    z-index: 9;
+    z-index: 800;
   }
 
   #menu-toggle:checked ~ .menu ul {
-    display: flex;
+    display: flex!important;
   }
 
   /*--HERO --*/
@@ -414,6 +474,33 @@ align-content: end;
   #vision p {
     font-size: 16px;
   }
+  #blog h1{
+    font-size: 1.8rem;
+    }
+    .emergency h1{
+      font-size: 2.5rem;
+    }
+    .emergency p{
+      font-size: 1.2rem;
+    }
+    .email-form {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    .email-form input {
+      width: 300px;
+    }  
+    .about-loni {
+      min-height: 60vh;
+      margin-top: 2rem !important;
+    }
+    .about-loni h1 {
+      font-size: 2rem;
+     }
+     .about-loni p {
+      font-size: 1.3rem !important;
+      padding-top: 3rem !important;
+     }
 }
 
 @media screen and (max-width: 768px) {
@@ -440,6 +527,10 @@ align-content: end;
     opacity: 80%;
     z-index: 1;
   }
+  .about-loni p {
+    font-size: 1.3rem;
+    padding-top: 4rem;
+   }
 }
 
 @media screen and (max-width: 1024px) {
@@ -454,5 +545,18 @@ align-content: end;
     object-position: 40% 10%;
     opacity: 80%;
     z-index: 1;
+  }
+  .about-loni {
+      min-height: 55vh;
+      margin-top: 10rem;
+  }
+  .about-loni p {
+    font-size: 2rem;
+    padding-top: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+   }
+   .email-form {
+    margin-bottom: 10rem;
   }
 }
