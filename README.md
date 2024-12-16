@@ -55,6 +55,30 @@ Lastly, the form or about page should aim for Users to join the waitlist and get
 
 ||||| DISCLAIMER - if there is any possibility to get feedback on code I would love it! |||||
 
+As Readme becomes TLTR let us speed up.
 
+### Technologies and process
+1. HTML5 - for structure and content for the website. 
+Process - as the time passed process for HTML was becoming more easy, I tryed to incorporate semantic elements and I am looking forward in mastering this part. 
+2. CSS3 - for3 layout, styling, and responsive design.
+Process - design is cool in figma but in code it can be a loooooong walk if you do not know all possibilities. And it was a lot of walking and typing but finally it became interesting.
+3. Flexbox and Grid - for adaptable layout. Process - this is my first nightmare. One who masters flexbox masters universe. I was again trying out a lot and returning to lectures but it just takes time and i will investigate into it.
+4. Media Queries - for responsiveness across devices. This is my second nightmare. I did not do it quite well so I had to use a lot of !important commands. I think order was wrong so and min and max values. I need toI get back to it.
+
+### Testing and validation
+
+I think my whole process is all about testing trial and error. I was all the time testing while coding using Dev tools. I tested links iin browser and as deployed. Some functionalities need still to be fixed and adapted. 
+
+Validation went with some smaller issues that I was able to fix quickly. 
+
+![insertin image](documentation/test.png)
+
+### Creditis
+
+Video clip and photos are from Envato and have full licence 
+
+Thank you. 
+
+p.s. there is still a bug in footer on icon Top but as i did not sleep for 48h i really I need to sleep! (will fix tmr)
 
 
