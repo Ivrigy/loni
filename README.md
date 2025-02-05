@@ -73,11 +73,17 @@ Process - design is cool in figma but in code it can be a loooooong walk if you 
 
 ### Testing and Deployment
 
-I think my whole process is all about testing trial and error. I was all the time testing while coding using Dev tools. I tested links in browser and as deployed. Some functionalities need still to be fixed and adapted. 
+I think my whole process was all about testing, trial and error. I was all the time testing while coding using Dev tools and adjusting according to inspection. I used W3C HTML Validator to fix and adjust my HTML code and W3C CSS Validator for CSS. I tested links in the browser and as I deployed. Some functionalities in media queries I still need to master in order to have better performance. 
 
-Validation went with some smaller issues that I was able to fix quickly. 
+![Css](documentation/css.png)
+![Html](documentation/validated.png)
+![Lighthouse](documentation/lighthouse.png)
 
-![insertin image](documentation/test.png)
+Bugs - There were several bugs in my HTML code that I resolved using W3C Validator. Many of them were Trailing slashes caused by using Prettier code formatter and some were functional made by lack of focus. You can find one example in the picture. 
+
+![Error](documentation/error.png)
+
+DEPLOYMENT - The site was deployed using GitHub pages and newly activated VS Code. Before deployment I had to clone and move my project from Gitpod to VS code.
 
 ### Credits
 
