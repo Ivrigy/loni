@@ -285,11 +285,17 @@ select{
 margin-top: 1rem;
 
 }
-#card-content p {
+#card-content1 p,
+#card-content2 p,
+#card-content3 p,
+#card-content4 p {
   font-size: 1.3rem; 
 }
 
-#helpcard {
+#helpcard1,
+#helpcard2,
+#helpcard3,
+#helpcard4 {
   width: 250px;
   height: 400px;
   background-color: #07243f; 
