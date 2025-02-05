@@ -48,10 +48,14 @@ a {
 }
 
 .button {
+  display: inline-block;
+  width: 13rem;
+  height: 3rem;
+  text-align: center;
+  text-decoration: none;
   font-family: "Rubik";
   font-weight: 400;
   text-transform: uppercase;
-  font-stretch: ultra-expanded;
   background-color: #ff8a33;
   color: #07243f;
 }
@@ -154,14 +158,17 @@ header a {
 }
 
 #btn {
+  display: inline-block;
   border: none;
   width: 12.5rem;
   height: 3rem;
+  line-height: 3rem; 
   font-size: 1.3rem;
-  font-weight: 500;
   font-stretch: ultra-expanded;
   margin-top: 5rem;
   border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .hero-video video {
@@ -422,6 +429,8 @@ margin-top: 1rem;
     display: flex!important;
   }
 
+
+
   /*--HERO --*/
   .container-hero {
     display: flex;
@@ -461,6 +470,7 @@ margin-top: 1rem;
     width: 6rem;
     height: 2rem;
     font-size: 0.8rem;
+    line-height: 2rem;
     margin-top: auto;
   }
 
